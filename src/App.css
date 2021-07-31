@@ -1,0 +1,123 @@
+/* GENERAL RULES */
+:root {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+h1 {
+    color: white;
+}
+button {
+    border: none;
+    background-color: transparent;
+}
+button:hover {
+    cursor: pointer;
+    outline: none;
+    opacity: 70%;
+}
+button:focus {
+    cursor: pointer;
+    outline: none;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.data-container {
+    display: flex;
+    flex: 6;
+}
+
+/* HEADER RULES */
+
+.header-container {
+    display: flex;
+    flex: 1;
+    background-color: #287efe;
+    padding: 0 7vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.header-buttons > button {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+}
+.header-buttons > button:first-child {
+    margin-right: 20px;
+}
+.header-buttons > button:last-child {
+    background-color: #1e1e1e;
+    padding: 10px;
+}
+
+/* FOOTER RULES */
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex: 3;
+    background-color: #1e1e1e;
+    padding: 0 7vw;
+}
+.footer-container > div:first-child {
+    display: flex;
+    flex-direction: column;
+}
+.footer-container > div > div {
+    display: flex;
+}
+.footer-container > div > div > div > button,
+.footer-container > div > div > div > span,
+.footer-container > div > div > span {
+    color: white;
+    opacity: 0.8;
+}
+.footer-container > div > div:last-child {
+    margin-top: 15px;
+    padding-left: 5px;
+}
+.footer-container > div > div:last-child > span {
+    font-size: 12px;
+}
+
+.footer-container > div .social-container > button > img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-container > div:last-child {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media (max-width: 700px) {
+    h1 {
+        font-size: 16px;
+    }
+
+    /* HEADER */
+    .header-buttons > button {
+        font-size: 12px;
+    }
+    .header-buttons > button:last-child {
+        padding: 5px 10px;
+    }
+
+    /* FOOTER */
+    .footer-container > div > div > div > button,
+    .footer-container > div > div > div > span,
+    .footer-container > div > div > span {
+        font-size: 8px;
+    }
+    .footer-container > div > div:last-child > span {
+        font-size: 10px;
+    }
+    .footer-container > div:last-child {
+        display: flex;
+        flex-direction: column;
+    }
+}
