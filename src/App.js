@@ -11,7 +11,8 @@ const App = () => {
                 <Header />
                 <div className="data-container">
                     <Switch>
-                        <Route path="/data" component={MoviesSeries} />
+                        <Route path="/series" component={MoviesSeries} />
+                        <Route path="/movies" component={MoviesSeries} />
                         <Route path="/" component={Home} />
                     </Switch>
                 </div>
